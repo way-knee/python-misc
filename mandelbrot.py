@@ -12,7 +12,7 @@ def in_mandelbrot(x0, y0, n):
         xtemp = x*x - y*y + x0
         y = 2*x*y + y0
         x = xtemp
-        n = n - 1
+        n -= 1
         if x*x + y*y > 4:
             return False
     return True
